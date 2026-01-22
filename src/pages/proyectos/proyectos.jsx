@@ -23,13 +23,13 @@ function Projects() {
                 'Interfaz responsive y moderna'
             ],
             images: [
-                '/src/assets/ProyectosImg/GestionTurnos/Captura de pantalla 2025-10-30 153435.png',
-                '/src/assets/ProyectosImg/GestionTurnos/Captura de pantalla 2025-10-30 152845.png',
-                '/src/assets/ProyectosImg/GestionTurnos/Captura de pantalla 2025-10-30 153012.png',
-                '/src/assets/ProyectosImg/GestionTurnos/Captura de pantalla 2025-10-30 153115.png',
-                '/src/assets/ProyectosImg/GestionTurnos/Captura de pantalla 2025-10-30 153417.png'
+                '/assets/ProyectosImg/GestionTurnos/Captura de pantalla 2025-10-30 153435.png',
+                '/assets/ProyectosImg/GestionTurnos/Captura de pantalla 2025-10-30 152845.png',
+                '/assets/ProyectosImg/GestionTurnos/Captura de pantalla 2025-10-30 153012.png',
+                '/assets/ProyectosImg/GestionTurnos/Captura de pantalla 2025-10-30 153115.png',
+                '/assets/ProyectosImg/GestionTurnos/Captura de pantalla 2025-10-30 153417.png'
             ],
-            coverImage: '/src/assets/ProyectosImg/GestionTurnos/Captura de pantalla 2025-10-30 153435.png',
+            coverImage: '/assets/ProyectosImg/GestionTurnos/Captura de pantalla 2025-10-30 153435.png',
             githubUrl: '#',
             liveUrl: '#',
             year: '2025',
@@ -50,12 +50,12 @@ function Projects() {
                 'Generación de reportes PDF'
             ],
             images: [
-                '/src/assets/ProyectosImg/GertorCorrespondencia/Captura de pantalla 2025-08-19 074716.png',
-                '/src/assets/ProyectosImg/GertorCorrespondencia/Captura de pantalla 2025-09-16 082124.png',
-                '/src/assets/ProyectosImg/GertorCorrespondencia/portafolio 10.1.png',
-                '/src/assets/ProyectosImg/GertorCorrespondencia/portafolio 10.2.png'
+                '/assets/ProyectosImg/GertorCorrespondencia/Captura de pantalla 2025-08-19 074716.png',
+                '/assets/ProyectosImg/GertorCorrespondencia/Captura de pantalla 2025-09-16 082124.png',
+                '/assets/ProyectosImg/GertorCorrespondencia/portafolio 10.1.png',
+                '/assets/ProyectosImg/GertorCorrespondencia/portafolio 10.2.png'
             ],
-            coverImage: '/src/assets/ProyectosImg/GertorCorrespondencia/Captura de pantalla 2025-09-16 082124.png',
+            coverImage: '/assets/ProyectosImg/GertorCorrespondencia/Captura de pantalla 2025-09-16 082124.png',
             githubUrl: '#',
             liveUrl: '#',
             year: '2025',
@@ -76,12 +76,12 @@ function Projects() {
                 'Contenido multimedia integrado'
             ],
             images: [
-                '/src/assets/ProyectosImg/Escatica/Captura de pantalla 2026-01-07 185814.png',
-                '/src/assets/ProyectosImg/Escatica/Captura de pantalla 2026-01-07 185822.png',
-                '/src/assets/ProyectosImg/Escatica/Captura de pantalla 2026-01-07 185830.png',
-                '/src/assets/ProyectosImg/Escatica/Captura de pantalla 2026-01-07 185901.png'
+                '/assets/ProyectosImg/Escatica/Captura de pantalla 2026-01-07 185814.png',
+                '/assets/ProyectosImg/Escatica/Captura de pantalla 2026-01-07 185822.png',
+                '/assets/ProyectosImg/Escatica/Captura de pantalla 2026-01-07 185830.png',
+                '/assets/ProyectosImg/Escatica/Captura de pantalla 2026-01-07 185901.png'
             ],
-            coverImage: '/src/assets/ProyectosImg/Escatica/Captura de pantalla 2026-01-07 185814.png',
+            coverImage: '/assets/ProyectosImg/Escatica/Captura de pantalla 2026-01-07 185814.png',
             githubUrl: '#',
             liveUrl: '#',
             year: '2024',
