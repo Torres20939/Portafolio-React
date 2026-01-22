@@ -6,7 +6,6 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "build:ghpages": "GITHUB_PAGES=true npm run build",
     "preview": "vite preview"
   },
   "repository": {
