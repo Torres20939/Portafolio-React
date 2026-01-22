@@ -2,12 +2,13 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { Routes, Route, Link, useLocation } from 'react-router-dom';
 import './styles/App.css';
 import Proyectos from './pages/proyectos/proyectos.jsx';
+import Habilidades from './pages/habilidades/habilidades.jsx';
 
 // Mover los datos fuera del componente para que no se recreen
 const projects = [
     { 
         name: 'Gestión De Turnos Metro Medellín', 
-        tech: 'React, Node.js, JavaScript', 
+        tech: 'React.js, Node.js, JavaScript', 
         year: '2025',
         description: 'Sistema de gestión de turnos para el Metro de Medellín'
     },
@@ -25,7 +26,7 @@ const projects = [
     },
 ];
 
-const skills = ['React', 'JavaScript', 'CSS', 'Node.js', 'Git & GitHub', 'HTML', 'Python', 'Django'];
+const skills = ['React.js', 'JavaScript', 'CSS', 'Node.js', 'Git & GitHub', 'HTML', 'Python', 'Django'];
 
 // Componente de Inicio - usando useCallback para evitar recrearlo en cada render - fuera de app
 const Inicio = React.memo(() => {
@@ -60,7 +61,6 @@ const Inicio = React.memo(() => {
                     {/* CTA Buttons */}
                     <div className="cta-buttons">
                         <Link to="/proyectos" className="btn-primary">Ver Proyectos</Link>
-                        <a href="mailto:mt931109@gmail.com" className="btn-secondary">Contactar</a>
                     </div>
 
                     {/* Habilidades */}
@@ -167,6 +167,7 @@ function App() {
                 <div className="nav-links">
                     <Link to="/">Inicio</Link>
                     <Link to="/proyectos">Proyectos</Link>
+                    <Link to="/habilidades">Habilidades</Link>
                 </div>
             </nav>
 
@@ -175,6 +176,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Inicio />} />
                     <Route path="/proyectos" element={<Proyectos />} />
+                    <Route path="/habilidades" element={<Habilidades />} />
                 </Routes>
             </main>
         </div>

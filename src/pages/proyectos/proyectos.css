@@ -15,8 +15,14 @@
    HEADER
    ============================================ */
 
+.projects-page {
+    margin-top: -90px;
+    padding-top: 90px;
+}
+
 .projects-header {
     padding: 4rem 8% 3rem;
+    margin-top: 0;
     border-bottom: 1px solid rgba(136, 140, 121, 0.2);
 }
 
@@ -368,7 +374,6 @@
     width: 100%;
     height: 100%;
     background-color: rgba(38, 38, 38, 0.98);
-    backdrop-filter: blur(10px);
     z-index: 9999;
     display: flex;
     align-items: center;
@@ -376,6 +381,8 @@
     padding: 2rem;
     animation: fadeIn 0.3s ease;
     overflow-y: auto;
+    will-change: opacity;
+    transform: translateZ(0);
 }
 
 @keyframes fadeIn {
@@ -398,6 +405,8 @@
     position: relative;
     animation: slideUp 0.4s ease;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    will-change: transform;
+    transform: translateZ(0);
 }
 
 @keyframes slideUp {
@@ -425,7 +434,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: var(--transition-smooth);
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.3s ease;
     z-index: 10;
     color: var(--almost-white);
 }
@@ -442,6 +451,7 @@
     grid-template-columns: 1.5fr 1fr;
     gap: 3rem;
     padding: 3rem;
+    will-change: auto;
 }
 
 /* ============================================
@@ -461,13 +471,14 @@
     border-radius: 16px;
     overflow: hidden;
     background-color: rgba(38, 38, 38, 0.5);
+    will-change: auto;
 }
 
 .gallery-main-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: var(--transition-smooth);
+    transition: none;
 }
 
 /* Navegación de la Galería */
@@ -597,6 +608,7 @@
     font-size: 1.5rem;
     font-weight: 800;
     color: var(--green-gray);
+    padding-top: 3rem;
 }
 
 .modal-description {
@@ -712,177 +724,6 @@
 }
 
 /* ============================================
-    SKILLS SECTION
-   ============================================ */
-.skills-section {
-    padding: 6rem 8%;
-    background: linear-gradient(135deg, rgba(136, 140, 121, 0.08) 0%, rgba(89, 89, 89, 0.08) 100%);
-    border-top: 1px solid rgba(136, 140, 121, 0.2);
-    border-bottom: 1px solid rgba(136, 140, 121, 0.2);
-}
-
-.skills-content {
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
-.skills-header {
-    text-align: center;
-    margin-bottom: 4rem;
-}
-
-.skills-label {
-    display: inline-block;
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
-    color: var(--green-gray);
-    font-weight: 700;
-    margin-bottom: 1rem;
-}
-
-.skills-title {
-    font-size: clamp(2.5rem, 5vw, 3.5rem);
-    font-weight: 800;
-    color: var(--almost-white);
-    margin-bottom: 1rem;
-    letter-spacing: -0.02em;
-}
-
-.skills-description {
-    font-size: 1.2rem;
-    color: var(--beige-light);
-    opacity: 0.9;
-}
-
-.skills-grid-section {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 3rem;
-}
-
-/* Categoria skills */
-.skill-category {
-    background: linear-gradient(135deg, rgba(89, 89, 89, 0.15) 0%, rgba(136, 140, 121, 0.08) 100%);
-    padding: 2.5rem;
-    border-radius: 20px;
-    border: 1px solid rgba(136, 140, 121, 0.2);
-    backdrop-filter: blur(10px);
-    transition: var(--transition-smooth);
-}
-
-.skills-category:hover {
-    border-color: var(--green-gray);
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(136, 140, 121, 0.2);
-}
-
-.category-title {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--green-gray);
-    margin-bottom: 2rem;
-    padding-bottom: 1rem;
-    border-bottom: 2px solid rgba(136, 140, 121, 0.3);
-}
-
-.skills-list {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-/* Skill item */
-.skill-item {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-.skill-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.skill-name {
-    font-size: 1.05rem;
-    font-weight: 600;
-    color: var(--almost-white);
-}
-
-.skill-level {
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: var(--green-gray);
-    padding: 0.3rem 0.9rem;
-    background-color: rgba(136, 140, 121, 0.2);
-    border-radius: 15px;
-    border: 1px solid rgba(136, 140, 121, 0.3);
-}
-
-/* Barra de progreso */
-.skill-bar {
-    width: 100%;
-    height: 8px;
-    background-color: rgba(89, 89, 89, 0.3);
-    border-radius: 10px;
-    overflow: hidden;
-    position: relative;
-}
-
-.skill-progress {
-    height: 100%;
-    background: linear-gradient(90deg, var(--green-gray) 0%, #9da88a 100%);
-    border-radius: 10px;
-    transition: width 1s ease-in-out;
-    position: relative;
-    box-shadow: 0 0 10px rgba(136, 140, 121, 0.5);
-}
-
-/* Animaciones al aparecer */
-.skill-progress::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(
-        90deg,
-        transparent,
-        rgba(255, 255, 255, 0.3),
-        transparent
-    );
-    animation: shimmer 2s infinite;
-}
-
-@keyframes shimmer {
-    0% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(100%);
-    }
-}
-
-/* Responsive design par skills */
-@media (max-width: 768px) {
-    .skills-section {
-        padding: 4rem 5%;
-    }
-
-    .skills-grid-section {
-        grid-template-columns: 1fr;
-        gap: 2rem
-    }
-
-    .skills-category {
-        padding: 2rem;
-    }
-}
-
-/* ============================================
    FOOTER
    ============================================ */
 
@@ -939,11 +780,28 @@
     .gallery-thumbnails {
         grid-template-columns: repeat(6, 1fr);
     }
+
+    .main-content {
+        padding: 0 5%;
+        margin-top: 90px;
+    }
+
+    .navbar {
+        padding: 1.5rem 5%;
+    }
+
+    .navbar.scrolled {
+        padding: 1.2rem 5%;
+    }
 }
 
 @media (max-width: 768px) {
     .projects-header {
         padding: 3rem 5% 2rem;
+    }
+
+    .header-label {
+        padding-top: 3rem;
     }
 
     .projects-gallery {
@@ -1020,6 +878,31 @@
         flex-direction: column;
         gap: 1.5rem;
         text-align: center;
+    }
+}
+
+@media (max-width: 640px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0;
+        height: auto;
+        padding: 1.2rem 5%;
+    }
+
+    .navbar-scrolled {
+        height: auto;
+        padding: 1rem 5%;
+    }
+
+    .nav-links {
+        gap: 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .main-content {
+        margin-top: auto;
+        padding: 0 5%;
     }
 }
 

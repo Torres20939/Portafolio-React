@@ -143,14 +143,15 @@ body::after {
 }
 
 /* ============================================
-   NAVEGACIÓN
+   NAVEGACIÓN - OPTIMIZADA
    ============================================ */
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 8%;
+    padding: 1.5rem 8%;
+    height: 90px;
     background-color: transparent;
     position: fixed;
     top: 0;
@@ -158,11 +159,13 @@ body::after {
     right: 0;
     z-index: 1000;
     transition: var(--transition-smooth);
+    will-change: background-color, backdrop-filter, padding, height;
 }
 
 .navbar.scrolled {
     background-color: rgba(38, 38, 38, 0.98);
     backdrop-filter: blur(20px);
+    height: 75px;
     padding: 1.2rem 8%;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
 }
@@ -170,6 +173,9 @@ body::after {
 .nav-brand {
     font-size: 1.5rem;
     font-weight: 700;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
 }
 
 .brand-initial {
@@ -186,6 +192,7 @@ body::after {
     letter-spacing: -0.02em;
     transition: var(--transition-smooth);
     box-shadow: 0 4px 15px rgba(136, 140, 121, 0.2);
+    text-decoration: none;
 }
 
 .brand-initial:hover {
@@ -196,6 +203,8 @@ body::after {
 .nav-links {
     display: flex;
     gap: 3rem;
+    margin: 0;
+    align-items: center;
 }
 
 .nav-links a {
@@ -205,8 +214,9 @@ body::after {
     font-size: 0.95rem;
     letter-spacing: 0.02em;
     position: relative;
-    transition: var(--transition-fast);
     opacity: 0.8;
+    transition: var(--transition-fast);
+    white-space: nowrap;
 }
 
 .nav-links a::after {
@@ -240,6 +250,11 @@ body::after {
     max-width: 1600px;
     width: 100%;
     margin: 0 auto;
+    margin-top: 90px;
+}
+
+.main-content.projects-page {
+    margin-top: 0;
 }
 
 /* ============================================
@@ -333,8 +348,7 @@ body::after {
     animation: fadeInUp 0.8s ease 0.8s forwards;
 }
 
-.btn-primary,
-.btn-secondary {
+.btn-primary {
     padding: 1rem 2.5rem;
     font-size: 1rem;
     font-weight: 600;
@@ -355,18 +369,6 @@ body::after {
 .btn-primary:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 25px rgba(136, 140, 121, 0.5);
-}
-
-.btn-secondary {
-    background-color: transparent;
-    color: var(--almost-white);
-    border: 2px solid var(--gray-medium);
-}
-
-.btn-secondary:hover {
-    border-color: var(--green-gray);
-    color: var(--green-gray);
-    transform: translateY(-3px);
 }
 
 /* ============================================
@@ -741,8 +743,7 @@ body::after {
         flex-direction: column;
     }
 
-    .btn-primary,
-    .btn-secondary {
+    .btn-primary {
         width: 100%;
         justify-content: center;
     }

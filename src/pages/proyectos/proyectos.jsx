@@ -14,7 +14,7 @@ function Projects() {
             category: 'Fullstack Application',
             description: 'Sistema integral de gestión de turnos para el Metro de Medellín. Permite a los usuarios agendar, modificar y cancelar citas de manera eficiente.',
             longDescription: 'Aplicación web completa desarrollada para optimizar la gestión de turnos en el Metro de Medellín. Incluye panel de administración, sistema de notificaciones en tiempo real, gestión de usuarios y reportes detallados. La plataforma permite a los usuarios visualizar disponibilidad, reservar turnos y recibir recordatorios automáticos.',
-            technologies: ['React', 'Node.js', 'JavaScript', 'CSS'],
+            technologies: ['React.js', 'Node.js', 'JavaScript', 'CSS'],
             features: [
                 'Autenticación y autorización de usuarios',
                 'Panel de administración completo',
@@ -300,129 +300,6 @@ function Projects() {
                     </div>
                 </div>
             )}
-
-            {/* Skills Section */}
-            <section className="skills-section">
-                <div className="skills-content">
-                    <div className="skills-header">
-                        <span className="skills-label">Habilidades</span>
-                        <h2 className="skills-title">Stack Tecnológico<span className="title-dot">.</span></h2>
-                        <p className="skills-description">
-                            Tecnologías y herramientas con las que trabajo regularmente
-                        </p>
-                    </div>
-
-                    <div className="skills-grid-section">
-                        {/* Frontend */}
-                        <div className="skill-category">
-                            <h3 className="category-title">Frontend</h3>
-                            <div className="skills-list">
-                                <div className="skill-item">
-                                    <div className="skill-info">
-                                        <span className="skill-name">React</span>
-                                        <span className="skill-level">Bajo</span>
-                                    </div>
-                                    <div className="skill-bar">
-                                        <div className="skill-progress" style={{ width: '40%' }}></div>
-                                    </div>
-                                </div>
-
-                                <div className="skill-item">
-                                    <div className="skill-info">
-                                        <span className="skill-name">JavaScript</span>
-                                        <span className="skill-level">Medio</span>
-                                    </div>
-                                    <div className="skill-bar">
-                                        <div className="skill-progress" style={{ width: '60%' }}></div>
-                                    </div>
-                                </div>
-
-                                <div className="skill-item">
-                                    <div className="skill-info">
-                                        <span className="skill-name">HTML & CSS</span>
-                                        <span className="skill-level">Alto</span>
-                                    </div>
-                                    <div className="skill-bar">
-                                        <div className="skill-progress" style={{ width: '90%' }}></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* Backend */}
-                        <div className="skill-category">
-                            <h3 className="category-title">Backend</h3>
-                            <div className="skills-list">
-                                <div className="skill-item">
-                                    <div className="skill-info">
-                                        <span className="skill-name">Node.js</span>
-                                        <span className="skill-level">Medio</span>
-                                    </div>
-                                    <div className="skill-bar">
-                                        <div className="skill-progress" style={{ width: '40%' }}></div>
-                                    </div>
-                                </div>
-
-                                <div className="skill-item">
-                                    <div className="skill-info">
-                                        <span className="skill-name">Python</span>
-                                        <span className="skill-level">Medio</span>
-                                    </div>
-                                    <div className="skill-bar">
-                                        <div className="skill-progress" style={{ width: '40%' }}></div>
-                                    </div>
-                                </div>
-
-                                <div className="skill-item">
-                                    <div className="skill-info">
-                                        <span className="skill-name">Django</span>
-                                        <span className="skill-level">Medio</span>
-                                    </div>
-                                    <div className="skill-bar">
-                                        <div className="skill-progress" style={{ width: '30%' }}></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* Herramientas & Otros */}
-                        <div className="skill-category">
-                            <h3 className="category-title">Herramientas & Otros</h3>
-                            <div className="skills-list">
-                                <div className="skill-item">
-                                    <div className="skill-info">
-                                        <span className="skill-name">Git & GitHub</span>
-                                        <span className="skill-level">Alto</span>
-                                    </div>
-                                    <div className="skill-bar">
-                                        <div className="skill-progress" style={{ width: '80%' }}></div>
-                                    </div>
-                                </div>
-
-                                <div className="skill-item">
-                                    <div className="skill-info">
-                                        <span className="skill-name">SQL</span>
-                                        <span className="skill-level">Bajo</span>
-                                    </div>
-                                    <div className="skill-bar">
-                                        <div className="skill-progress" style={{ width: '20%' }}></div>
-                                    </div>
-                                </div>
-
-                                <div className="skill-item">
-                                    <div className="skill-info">
-                                        <span className="skill-name">Responsive Design</span>
-                                        <span className="skill-level">Alto</span>
-                                    </div>
-                                    <div className="skill-bar">
-                                        <div className="skill-progress" style={{ width: '85%' }}></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
 
             {/* Footer */}
             <footer className="projects-footer">

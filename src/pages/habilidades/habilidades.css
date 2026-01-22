@@ -1,0 +1,518 @@
+/* ============================================
+   VARIABLES - PÁGINA HABILIDADES
+   ============================================ */
+
+:root {
+    --carbon-dark: #262626;
+    --gray-medium: #595959;
+    --almost-white: #F0F1F2;
+    --beige-light: #D9D3C7;
+    --green-gray: #888C79;
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ============================================
+   CONTENEDOR PRINCIPAL
+   ============================================ */
+
+.pagina-habilidades {
+    min-height: 100vh;
+    background-color: var(--carbon-dark);
+    color: var(--almost-white);
+}
+
+/* ============================================
+   ENCABEZADO
+   ============================================ */
+
+.encabezado-habilidades {
+    padding: 6rem 8% 4rem;
+    border-bottom: 1px solid rgba(136, 140, 121, 0.2);
+}
+
+.contenedor-encabezado {
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.etiqueta-seccion {
+    display: inline-block;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--green-gray);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.titulo-principal {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 800;
+    color: var(--almost-white);
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    margin-bottom: 1.5rem;
+}
+
+.punto-acento {
+    color: var(--green-gray);
+}
+
+.subtitulo-principal {
+    font-size: 1.2rem;
+    color: var(--beige-light);
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+/* ============================================
+   ESTILOS COMUNES DE SECCIONES
+   ============================================ */
+
+.contenedor-seccion {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.encabezado-seccion {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.icono-seccion {
+    color: var(--green-gray);
+    margin-bottom: 1rem;
+}
+
+.titulo-seccion {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 800;
+    color: var(--almost-white);
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+}
+
+.descripcion-seccion {
+    font-size: 1.1rem;
+    color: var(--beige-light);
+    max-width: 600px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+/* ============================================
+   HABILIDADES TÉCNICAS
+   ============================================ */
+
+.seccion-tecnicas {
+    padding: 6rem 8%;
+    background: linear-gradient(135deg, rgba(136, 140, 121, 0.05) 0%, rgba(89, 89, 89, 0.05) 100%);
+}
+
+.grilla-habilidades-tecnicas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2.5rem;
+}
+
+.tarjeta-categoria {
+    background: linear-gradient(135deg, rgba(89, 89, 89, 0.15) 0%, rgba(136, 140, 121, 0.08) 100%);
+    padding: 2.5rem;
+    border-radius: 20px;
+    border: 1px solid rgba(136, 140, 121, 0.2);
+    backdrop-filter: blur(10px);
+    transition: var(--transition-smooth);
+}
+
+.tarjeta-categoria:hover {
+    border-color: var(--green-gray);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(136, 140, 121, 0.2);
+}
+
+.titulo-categoria {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--green-gray);
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgba(136, 140, 121, 0.3);
+}
+
+.lista-skills {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.item-skill {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.info-skill {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nombre-skill {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--almost-white);
+}
+
+.etiqueta-nivel {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--green-gray);
+    padding: 0.3rem 0.9rem;
+    background-color: rgba(136, 140, 121, 0.2);
+    border-radius: 15px;
+    border: 1px solid rgba(136, 140, 121, 0.3);
+}
+
+.barra-progreso {
+    width: 100%;
+    height: 8px;
+    background-color: rgba(89, 89, 89, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progreso-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--green-gray) 0%, #9da88a 100%);
+    border-radius: 10px;
+    transition: width 1s ease-in-out;
+    position: relative;
+    box-shadow: 0 0 10px rgba(136, 140, 121, 0.5);
+}
+
+.progreso-fill::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.3),
+        transparent
+    );
+    animation: brillar 2s infinite;
+}
+
+@keyframes brillar {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/* ============================================
+   HABILIDADES BLANDAS
+   ============================================ */
+
+.seccion-blandas {
+    padding: 6rem 8%;
+    background-color: var(--carbon-dark);
+}
+
+.grilla-habilidades-blandas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.tarjeta-blanda {
+    background: linear-gradient(135deg, rgba(89, 89, 89, 0.15) 0%, rgba(136, 140, 121, 0.08) 100%);
+    padding: 2.5rem;
+    border-radius: 20px;
+    border: 1px solid rgba(136, 140, 121, 0.2);
+    text-align: center;
+    transition: var(--transition-smooth);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.tarjeta-blanda:hover {
+    border-color: var(--green-gray);
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(136, 140, 121, 0.25);
+}
+
+.icono-blanda {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--green-gray) 0%, #9da88a 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--carbon-dark);
+    margin-bottom: 0.5rem;
+    transition: var(--transition-smooth);
+    box-shadow: 0 8px 20px rgba(136, 140, 121, 0.3);
+}
+
+.tarjeta-blanda:hover .icono-blanda {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.nombre-blanda {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--almost-white);
+    margin-bottom: 0.5rem;
+}
+
+.descripcion-blanda {
+    font-size: 0.95rem;
+    color: var(--beige-light);
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.nivel-blanda {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.4rem 1.2rem;
+    background-color: rgba(136, 140, 121, 0.2);
+    color: var(--green-gray);
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border: 1px solid rgba(136, 140, 121, 0.3);
+}
+
+/* ============================================
+   IDIOMAS
+   ============================================ */
+
+.seccion-idiomas {
+    padding: 6rem 8%;
+    background: linear-gradient(135deg, rgba(136, 140, 121, 0.05) 0%, rgba(89, 89, 89, 0.05) 100%);
+}
+
+.grilla-idiomas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 3rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.tarjeta-idioma {
+    background: linear-gradient(135deg, rgba(89, 89, 89, 0.15) 0%, rgba(136, 140, 121, 0.08) 100%);
+    padding: 2.5rem;
+    border-radius: 20px;
+    border: 1px solid rgba(136, 140, 121, 0.2);
+    text-align: center;
+    transition: var(--transition-smooth);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.tarjeta-idioma:hover {
+    border-color: var(--green-gray);
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(136, 140, 121, 0.25);
+}
+
+.encabezado-idioma {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgba(136, 140, 121, 0.2);
+}
+
+.nombre-idioma {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--almost-white);
+}
+
+.nivel-idioma {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--green-gray);
+    padding: 0.4rem 1rem;
+    background-color: rgba(136, 140, 121, 0.2);
+    border-radius: 15px;
+    border: 1px solid rgba(136, 140, 121, 0.3);
+}
+
+/* Progreso Circular */
+.contenedor-progreso-circular {
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+
+.progreso-circular {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+}
+
+.circulo-fondo {
+    fill: none;
+    stroke: rgba(89, 89, 89, 0.3);
+    stroke-width: 8;
+}
+
+.circulo-progreso {
+    fill: none;
+    stroke: url(#gradiente-progreso);
+    stroke-width: 8;
+    stroke-linecap: round;
+    transition: stroke-dasharray 1s ease-in-out;
+}
+
+/* Gradiente para el círculo de progreso */
+.tarjeta-idioma::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.circulo-progreso {
+    stroke: var(--green-gray);
+}
+
+.texto-porcentaje {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.numero-porcentaje {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--green-gray);
+    display: block;
+}
+
+.certificacion-idioma {
+    font-size: 0.95rem;
+    color: var(--beige-light);
+    opacity: 0.9;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+
+.pie-pagina-habilidades {
+    padding: 3rem 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--beige-light);
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(136, 140, 121, 0.2);
+}
+
+.enlaces-pie {
+    display: flex;
+    gap: 2rem;
+}
+
+.enlaces-pie p {
+    color: var(--beige-light);
+    font-weight: 600;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+@media (max-width: 1200px) {
+    .grilla-habilidades-tecnicas,
+    .grilla-habilidades-blandas {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .encabezado-habilidades {
+        padding: 4rem 5% 3rem;
+    }
+
+    .seccion-tecnicas,
+    .seccion-blandas,
+    .seccion-idiomas {
+        padding: 4rem 5%;
+    }
+
+    .grilla-habilidades-tecnicas,
+    .grilla-habilidades-blandas,
+    .grilla-idiomas {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .tarjeta-categoria,
+    .tarjeta-blanda,
+    .tarjeta-idioma {
+        padding: 2rem;
+    }
+
+    .pie-pagina-habilidades {
+        padding: 2rem 5%;
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    .titulo-principal {
+        font-size: 2rem;
+    }
+
+    .subtitulo-principal {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .encabezado-habilidades {
+        padding: 3rem 5% 2rem;
+    }
+
+    .titulo-seccion {
+        font-size: 1.8rem;
+    }
+
+    .icono-blanda {
+        width: 70px;
+        height: 70px;
+    }
+
+    .contenedor-progreso-circular {
+        width: 100px;
+        height: 100px;
+    }
+
+    .numero-porcentaje {
+        font-size: 1.5rem;
+    }
+}
