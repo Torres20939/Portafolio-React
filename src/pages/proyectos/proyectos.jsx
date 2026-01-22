@@ -2,6 +2,23 @@ import { useState } from 'react';
 import { ArrowUpRight, Code2, X, ChevronLeft, ChevronRight, ExternalLink } from 'lucide-react';
 import './proyectos.css';
 
+// Importar imágenes
+import GestionTurnos1 from '../../assets/ProyectosImg/GestionTurnos/Captura de pantalla 2025-10-30 153435.png';
+import GestionTurnos2 from '../../assets/ProyectosImg/GestionTurnos/Captura de pantalla 2025-10-30 152845.png';
+import GestionTurnos3 from '../../assets/ProyectosImg/GestionTurnos/Captura de pantalla 2025-10-30 153012.png';
+import GestionTurnos4 from '../../assets/ProyectosImg/GestionTurnos/Captura de pantalla 2025-10-30 153115.png';
+import GestionTurnos5 from '../../assets/ProyectosImg/GestionTurnos/Captura de pantalla 2025-10-30 153417.png';
+
+import Correspondencia1 from '../../assets/ProyectosImg/GertorCorrespondencia/Captura de pantalla 2025-08-19 074716.png';
+import Correspondencia2 from '../../assets/ProyectosImg/GertorCorrespondencia/Captura de pantalla 2025-09-16 082124.png';
+import Correspondencia3 from '../../assets/ProyectosImg/GertorCorrespondencia/portafolio 10.1.png';
+import Correspondencia4 from '../../assets/ProyectosImg/GertorCorrespondencia/portafolio 10.2.png';
+
+import Escatica1 from '../../assets/ProyectosImg/Escatica/Captura de pantalla 2026-01-07 185814.png';
+import Escatica2 from '../../assets/ProyectosImg/Escatica/Captura de pantalla 2026-01-07 185822.png';
+import Escatica3 from '../../assets/ProyectosImg/Escatica/Captura de pantalla 2026-01-07 185830.png';
+import Escatica4 from '../../assets/ProyectosImg/Escatica/Captura de pantalla 2026-01-07 185901.png';
+
 function Projects() {
     const [hoveredProject, setHoveredProject] = useState(null);
     const [selectedProject, setSelectedProject] = useState(null);
@@ -23,13 +40,13 @@ function Projects() {
                 'Interfaz responsive y moderna'
             ],
             images: [
-                '/src/assets/ProyectosImg/GestionTurnos/Captura de pantalla 2025-10-30 153435.png',
-                '/src/assets/ProyectosImg/GestionTurnos/Captura de pantalla 2025-10-30 152845.png',
-                '/src/assets/ProyectosImg/GestionTurnos/Captura de pantalla 2025-10-30 153012.png',
-                '/src/assets/ProyectosImg/GestionTurnos/Captura de pantalla 2025-10-30 153115.png',
-                '/src/assets/ProyectosImg/GestionTurnos/Captura de pantalla 2025-10-30 153417.png'
+                GestionTurnos1,
+                GestionTurnos2,
+                GestionTurnos3,
+                GestionTurnos4,
+                GestionTurnos5
             ],
-            coverImage: '/src/assets/ProyectosImg/GestionTurnos/Captura de pantalla 2025-10-30 153435.png',
+            coverImage: GestionTurnos1,
             githubUrl: '#',
             liveUrl: '#',
             year: '2025',
@@ -50,12 +67,12 @@ function Projects() {
                 'Generación de reportes PDF'
             ],
             images: [
-                '/src/assets/ProyectosImg/GertorCorrespondencia/Captura de pantalla 2025-08-19 074716.png',
-                '/src/assets/ProyectosImg/GertorCorrespondencia/Captura de pantalla 2025-09-16 082124.png',
-                '/src/assets/ProyectosImg/GertorCorrespondencia/portafolio 10.1.png',
-                '/src/assets/ProyectosImg/GertorCorrespondencia/portafolio 10.2.png'
+                Correspondencia1,
+                Correspondencia2,
+                Correspondencia3,
+                Correspondencia4
             ],
-            coverImage: '/src/assets/ProyectosImg/GertorCorrespondencia/Captura de pantalla 2025-09-16 082124.png',
+            coverImage: Correspondencia2,
             githubUrl: '#',
             liveUrl: '#',
             year: '2025',
@@ -76,12 +93,12 @@ function Projects() {
                 'Contenido multimedia integrado'
             ],
             images: [
-                '/src/assets/ProyectosImg/Escatica/Captura de pantalla 2026-01-07 185814.png',
-                '/src/assets/ProyectosImg/Escatica/Captura de pantalla 2026-01-07 185822.png',
-                '/src/assets/ProyectosImg/Escatica/Captura de pantalla 2026-01-07 185830.png',
-                '/src/assets/ProyectosImg/Escatica/Captura de pantalla 2026-01-07 185901.png'
+                Escatica1,
+                Escatica2,
+                Escatica3,
+                Escatica4
             ],
-            coverImage: '/src/assets/ProyectosImg/Escatica/Captura de pantalla 2026-01-07 185814.png',
+            coverImage: Escatica1,
             githubUrl: '#',
             liveUrl: '#',
             year: '2024',
