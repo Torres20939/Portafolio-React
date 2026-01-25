@@ -1,6 +1,6 @@
 import React from 'react';
 import { Code, Heart, MessageCircle, Users, Lightbulb, Target, Globe, Award } from 'lucide-react';
-import './Habilidades.css';
+import './habilidades.css';
 
 function Habilidades() {
     const habilidadesTecnicas = [
