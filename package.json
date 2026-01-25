@@ -1,19 +1,24 @@
 {
   "name": "portafolio-react",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "type": "module",
+  "description": "Portafolio personal de Miguel Torres",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "vercel-build": "vite build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Torres20939/Portafolio-React.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "portafolio",
+    "react",
+    "vite"
+  ],
+  "author": "Miguel Torres",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Torres20939/Portafolio-React/issues"
@@ -28,5 +33,9 @@
   "devDependencies": {
     "@vitejs/plugin-react": "^5.1.1",
     "vite": "^7.2.4"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=9.0.0"
   }
 }

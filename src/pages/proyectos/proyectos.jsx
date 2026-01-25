@@ -30,14 +30,15 @@ function Projects() {
             title: 'Gestión De Turnos Metro Medellín',
             category: 'Fullstack Application',
             description: 'Sistema integral de gestión de turnos para el Metro de Medellín. Permite a los usuarios agendar, modificar y cancelar citas de manera eficiente.',
-            longDescription: 'Aplicación web completa desarrollada para optimizar la gestión de turnos en el Metro de Medellín. Incluye panel de administración, sistema de notificaciones en tiempo real, gestión de usuarios y reportes detallados. La plataforma permite a los usuarios visualizar disponibilidad, reservar turnos y recibir recordatorios automáticos.',
+            longDescription: 'Apoye a la creacion de paginas y logica para un sistema de gestion de turnos completo para el Metro de Medellin. Desarrollado con React.js en el frontend y Node.js en el backend, este sistema permite a los usuarios visualizar sus turnos, modificar y cancelar turnos, recibir notificaciones entre otros.',
             technologies: ['React.js', 'Node.js', 'JavaScript', 'CSS'],
             features: [
                 'Autenticación y autorización de usuarios',
-                'Panel de administración completo',
+                'Visualizacion de turnos Intuitiva',
                 'Notificaciones en tiempo real',
-                'Sistema de reportes y estadísticas',
-                'Interfaz responsive y moderna'
+                'Generacion de permisos',
+                'Interfaz responsive y moderna',
+                'Conexiones API para datos en tiempo real'
             ],
             images: [
                 GestionTurnos1,
@@ -56,15 +57,15 @@ function Projects() {
             id: 2,
             title: 'Gestor de Correspondencia',
             category: 'Backend System',
-            description: 'Aplicación robusta para la gestión y seguimiento de documentos y correspondencia empresarial con sistema de notificaciones.',
-            longDescription: 'Sistema de gestión documental desarrollado con Python y Django. Permite el registro, clasificación y seguimiento de correspondencia empresarial. Incluye workflow de aprobaciones, almacenamiento seguro de documentos y trazabilidad completa de todas las operaciones.',
+            description: 'Aplicación robusta para la gestión y seguimiento de documentos y correspondencia empresarial.',
+            longDescription: 'Sistema de gestión documental, Permite la generacion de radicados y sellos personalizados mas el estampado de sellos en documentos PDF y seguimiento de numeros de radicado',
             technologies: ['Python', 'Django', 'HTML', 'CSS',],
             features: [
-                'Registro y clasificación de documentos',
-                'Workflow de aprobaciones multinivel',
+                'Creacion y gestion de radicados',
+                'Sellos personalizados para PDF',
                 'Búsqueda avanzada y filtros',
-                'Historial y trazabilidad completa',
-                'Generación de reportes PDF'
+                'Seguimiento de correspondencia (Consecutivos)',
+                'Interfaz de usuario Intuitiva'
             ],
             images: [
                 Correspondencia1,
@@ -83,13 +84,10 @@ function Projects() {
             title: 'Escatica',
             category: 'Educational Platform',
             description: 'Plataforma web educativa interactiva diseñada para facilitar el aprendizaje con recursos multimedia y seguimiento de progreso.',
-            longDescription: 'Plataforma educativa desarrollada con Flask que ofrece cursos interactivos, evaluaciones automáticas y seguimiento del progreso del estudiante. Los instructores pueden crear contenido multimedia, asignar tareas y monitorear el rendimiento de sus estudiantes en tiempo real.',
+            longDescription: 'Escatica fue una plataforma web basado en retos matematicos, con una mecanica inspirada en el clasico juego de "Serpientes y Escaleras", donde cada movimiento en el tablero depende de resolver correctamente una operacion',
             technologies: ['Python', 'JavaScript', 'CSS', 'Django', 'HTML'],
             features: [
-                'Creación de cursos y lecciones',
-                'Sistema de evaluaciones automáticas',
-                'Seguimiento de progreso del estudiante',
-                'Foros de discusión',
+                'Interfaz interactiva y amigable',
                 'Contenido multimedia integrado'
             ],
             images: [
@@ -322,7 +320,7 @@ function Projects() {
             <footer className="projects-footer">
                 <p>© 2025 Miguel Torres. Hecho con 🖤</p>
                 <div className="footer-social">
-                    <p>mt931109@gmail.com</p>
+                    <p>3106599989</p>
                 </div>
             </footer>
         </div>

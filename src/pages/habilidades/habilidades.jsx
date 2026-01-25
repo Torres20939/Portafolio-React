@@ -7,7 +7,7 @@ function Habilidades() {
         {
             categoria: 'Frontend',
             skills: [
-                { nombre: 'React', nivel: 'Basico', porcentaje: 40 },
+                { nombre: 'React', nivel: 'Basico', porcentaje: 30 },
                 { nombre: 'JavaScript', nivel: 'Intermedio', porcentaje: 50 },
                 { nombre: 'HTML & CSS', nivel: 'Avanzado', porcentaje: 80 }
             ]
@@ -212,7 +212,7 @@ function Habilidades() {
             <footer className="pie-pagina-habilidades">
                 <p>© 2025 Miguel Torres. Hecho con 🖤</p>
                 <div className="enlaces-pie">
-                    <p>mt931109@gmail.com</p>
+                    <p>3106599989</p>
                 </div>
             </footer>
         </div>
