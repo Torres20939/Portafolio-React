@@ -38,7 +38,7 @@ function Projects() {
                 'Notificaciones en tiempo real',
                 'Generacion de permisos',
                 'Interfaz responsive y moderna',
-                'Conexiones API para datos en tiempo real'
+                'Conexiones Endpoints para datos en tiempo real'
             ],
             images: [
                 GestionTurnos1,
