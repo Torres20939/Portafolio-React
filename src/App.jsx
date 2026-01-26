@@ -49,8 +49,7 @@ const Inicio = React.memo(() => {
                     
                     <div className="hero-description">
                         <p className="intro-text">
-                            Desarrollador en formación apasionado por crear soluciones digitales 
-                            únicas con código limpio y diseño intuitivo.
+                            Estudiante de desarrollo de software apasionado por crear soluciones digitales innovadoras. Como técnico en desarrollo de software, tengo experiencia práctica en frontend y backend, trabajando con tecnologías como React, Node.js, Python y JavaScript.
                         </p>
                         <p className="intro-subtext">
                             Tengo experiencia práctica en frontend y backend, trabajando con 
